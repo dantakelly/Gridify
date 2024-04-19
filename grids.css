@@ -1,0 +1,444 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{ 
+    background: linear-gradient(360deg, #FF8E8F, #FFFDCB);
+    min-height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.header-grids{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+.Grid1-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px;
+}
+
+.Grid1-container p{ 
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.Grid1{ 
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 300px 100px 100px;
+    gap: 5px;
+    margin-top: 30px;
+}  
+
+
+.box1-grid1{ 
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box2-grid1{ 
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box3-grid1{ 
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box4-grid1{ 
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+
+/* Grid Two (2) */
+.Grid2-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px;
+}
+
+.Grid2-container p{ 
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.Grid2{ 
+    display: grid;
+    grid-template-rows:  100px 100px 100px 100px 100px 100px 10px 10px;
+    grid-template-columns:  150px 100px 100px 100px 100px 100px 100px;
+    gap: 5px;
+    margin-top: 30px;
+}  
+
+
+
+.box1-grid2{
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+   background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+   border: solid black;
+   border-radius: 5px;
+}
+
+.box2-grid2{  
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-column-start: 0;
+    grid-column-end: 0;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box3-grid2{  
+    grid-row-start: 1;
+    grid-row-end: 0;
+
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box4-grid2{ 
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    grid-column-start: 3;
+    grid-column-end: 3;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box5-grid2{ 
+    grid-row-start: 0;
+    grid-row-end: 5;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box6-grid2{  
+    grid-row-start: 4;
+    grid-row-end: 0;
+
+    grid-column-start: 4;
+    grid-column-end: 8;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.box7-grid2{ 
+    grid-row-start: 3;
+    grid-row-end: 0;
+
+    grid-column-start: 4;
+    grid-column-end: 8;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+   border: solid black;
+   border-radius: 5px;
+}
+
+.box8-grid2{ 
+    grid-row-start: 2;
+    grid-row-end: 0;
+
+    grid-column-start: 4;
+    grid-column-end:8;
+
+    background: linear-gradient(200deg,#FF8E8F, #FFFDCB); 
+    border: solid black;
+    border-radius: 5px;
+}
+
+.learn-more-button{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+    bottom: 100px;
+    gap: 10px;
+}
+
+.learn-more-button button{ 
+    padding: 10px;
+    border-radius: 10px;
+    border: solid rgb(76, 68, 68);
+    background-color: #FFFDCB;
+
+    transition: all 0.3s ease;
+}
+.learn-more-button button:hover{ 
+    background-color: #FF8E8F;
+    border: solid white;
+}
+
+
+
+/* Media query for sizes --max 300px -- front page */
+@media screen and (max-width: 350px) {
+
+    .Grid1{ 
+        display: grid;
+        grid-template-rows: 50px 50px 50px 50px;
+        grid-template-columns: 50px 50px 50px 50px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid1-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid1-container h1{ 
+        font-size: 24px;
+    }
+
+    .Grid1-container p{
+        font-size: 13px;
+
+        
+    }
+/*  */
+    .Grid2{ 
+        display: grid;
+        grid-template-rows:  50px 50px 50px 50px 50px 50px 50px 50px;
+        grid-template-columns:  30px 30px 30px 30px 30px 30px 30px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid2-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid2-container h1{ 
+        font-size: 20px;
+    }
+
+    .Grid2-container p{
+        font-size: 13px;
+    }
+}
+/* closed */
+
+
+/* Media query for sizes --min 301px to 500px -- front page */
+@media screen and (min-width: 351px) and (max-width: 500px) {
+
+    .Grid1{ 
+        display: grid;
+        grid-template-rows: 70px 70px 70px 70px;
+        grid-template-columns: 70px 70px 70px 70px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid1-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid1-container h1{ 
+        font-size: 24px;
+    }
+
+    .Grid1-container p{
+        font-size: 13px;
+
+        
+    }
+/*  */
+    .Grid2{ 
+        display: grid;
+        grid-template-rows:  70px 70px 70px 70px 70px 70px 70px 70px;
+        grid-template-columns:  50px 50px 50px 50px 60px 0px 20px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid2-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid2-container h1{ 
+        font-size: 20px;
+    }
+
+    .Grid2-container p{
+        font-size: 13px;
+    }
+}
+/* closed */
+
+/* Media query for sizes --min 501px to 700px -- front page */
+@media screen and (min-width: 501px) and (max-width: 700px) {
+
+    .Grid1{ 
+        display: grid;
+        grid-template-rows: 90px 90px 90px 90px;
+        grid-template-columns: 90px 90px 90px 90px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid1-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid1-container h1{ 
+        font-size: 40px;
+    }
+
+    .Grid1-container p{
+        font-size: 20px;
+
+        
+    }
+/*  */
+    .Grid2{ 
+        display: grid;
+        grid-template-rows:  70px 70px 70px 70px 70px 70px 70px 70px;
+        grid-template-columns:  70px 70px 70px 70px 70px 0px 30px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid2-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid2-container h1{ 
+        font-size: 40px;
+    }
+
+    .Grid2-container p{
+        font-size: 20px;
+    }
+}
+
+/* Media query for sizes --min 701px to 1020px -- front page */
+@media screen and (min-width: 701px) and (max-width: 1280px) {
+
+    .Grid1{ 
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid1-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid1-container h1{ 
+        font-size: 40px;
+    }
+
+    .Grid1-container p{
+        font-size: 20px;
+
+        
+    }
+/*  */
+    .Grid2{ 
+        display: grid;
+        grid-template-rows:  100px 100px 100px 100px 100px 100px 100px 100px;
+        grid-template-columns:  100px 100px 100px 100px 100px 0px 30px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .Grid2-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid2-container h1{ 
+        font-size: 40px;
+    }
+
+    .Grid2-container p{
+        font-size: 20px;
+    }
+}

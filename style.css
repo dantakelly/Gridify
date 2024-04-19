@@ -1,0 +1,176 @@
+*{ 
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body{ 
+    background: linear-gradient(360deg, #FF8E8F, #FFFDCB);
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+header h1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+    min-height: 90vh;
+}
+
+.g{ 
+    transition: font-size 07s ease;
+    color: #FF8E8F;
+    cursor: pointer;
+}
+.r{ 
+    transition: font-size 6s ease;
+    color: #FFB38E;
+    cursor: pointer;
+}
+.i{ 
+    transition: font-size 5s ease;
+    color: #FFB38E;
+    cursor: pointer;
+}
+.d{ 
+    transition: font-size 4s ease;
+    color: #FF8E8F;
+    cursor: pointer;
+}
+.i2{ 
+    transition: font-size 3s ease;
+    cursor: pointer;
+}
+.f{ 
+    transition: font-size 2s ease;
+    cursor: pointer;
+}
+.y{ 
+    transition: font-size 1s ease;
+    cursor: pointer;
+}
+
+.toSeeGrids{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toSeeGrids img{ 
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 90px;
+    cursor: pointer;
+
+    animation: blink-animation 1s infinite;
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+.toSeeGrids p{ 
+    position: relative;
+    bottom: 60px;
+    color: white;
+    font-weight: light;
+    /* font-style: italic; */
+}
+
+
+
+/* Media query for sizes --max 300px -- front page */
+@media screen and (max-width: 300px) { 
+    .g, .r, .i, .d, .i2, .f, .y{ 
+        transition: none;
+        font-size: 65px;
+    }
+
+    .logo-name{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .toSeeGrids p{ 
+        font-weight: bolder;
+        font-size: 14px;
+    }
+}
+/* closed */
+
+
+/* Media query for sizes --min 301px to 500px -- front page */
+@media screen and (min-width: 301px) and (max-width: 500px) {
+    .g, .r, .i, .d, .i2, .f, .y{ 
+        transition: none;
+        font-size: 70px;
+    }
+    
+    .logo-name{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .toSeeGrids p{ 
+        font-weight: bolder;
+        font-size: 14px;
+    }
+}
+/* closed */
+
+
+/* Media query for sizes --min 501px to 700px -- front page */
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    .g, .r, .i, .d, .i2, .f, .y{ 
+        transition: none;
+        font-size: 120px;
+    }
+    
+    .logo-name{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .toSeeGrids p{ 
+        font-weight: bolder;
+        font-size: 20px;
+    }
+}
+/* closed */
+
+
+/* Media query for sizes --min 701px to 1020px -- front page */
+@media screen and (min-width: 701px) and (max-width: 1280px) {
+    .g, .r, .i, .d, .i2, .f, .y{ 
+        transition: none;
+        font-size: 170px;
+    }
+    
+    .logo-name{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .toSeeGrids p{ 
+        font-style: italic;
+        font-size: 30px;
+    }
+}
+/* closed */
